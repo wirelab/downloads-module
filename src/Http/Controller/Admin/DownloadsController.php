@@ -1,8 +1,9 @@
 <?php namespace Wirelab\DownloadsModule\Http\Controller\Admin;
 
+use Anomaly\Streams\Platform\Http\Controller\AdminController;
+use Anomaly\Streams\Platform\Stream\Contract\StreamRepositoryInterface;
 use Wirelab\DownloadsModule\Download\Form\DownloadFormBuilder;
 use Wirelab\DownloadsModule\Download\Table\DownloadTableBuilder;
-use Anomaly\Streams\Platform\Http\Controller\AdminController;
 
 class DownloadsController extends AdminController
 {
@@ -39,5 +40,16 @@ class DownloadsController extends AdminController
     public function edit(DownloadFormBuilder $form, $id)
     {
         return $form->render($id);
+    }
+
+    /**
+     * Get all assignments
+     *
+     * @return RedirectResponse
+     */
+    public function assignments(StreamRepositoryInterface $streams)
+    {
+        $stream = $streams->findBySlugAndNamespace('downloads', 'downloads');
+        return $this->redirect->to('admin/downloads/assignments/' . $stream->getId());
     }
 }

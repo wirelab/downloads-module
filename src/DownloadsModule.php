@@ -18,6 +18,39 @@ class DownloadsModule extends Module
      * @var array
      */
     protected $sections = [
-        'example'
+        'downloads' => [
+            'buttons' => [
+                'new_certificate' => [
+                    'text' => 'wirelab.module.downloads::button.download.new',
+                    'enabled' => 'admin/downloads'
+                ],
+                'assignments' =>[
+                    'enabled' => 'admin/downloads'
+                ]
+            ],
+            'sections' => [
+                'assignments' => [
+                    'hidden' => true,
+                    'href'    => 'admin/downloads/assignments/{request.route.parameters.stream}',
+                    'buttons' => [
+                        'assign_fields' => [
+                            'data-toggle' => 'modal',
+                            'data-target' => '#modal',
+                            'href'        => 'admin/downloads/assignments/{request.route.parameters.stream}/choose',
+                        ],
+                    ]
+                ]
+            ],
+        ],
+        'fields' => [
+            'buttons' => [
+                'new_field' => [
+                    'text'        => 'module::button.field.new',
+                    'data-toggle' => 'modal',
+                    'data-target' => '#modal',
+                    'href'        => 'admin/downloads/fields/choose',
+                ],
+            ],
+        ],
     ];
 }
