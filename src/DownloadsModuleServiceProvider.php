@@ -23,7 +23,7 @@ class DownloadsModuleServiceProvider extends AddonServiceProvider
     ];
 
     protected $bindings = [
-        'Anomaly\Streams\Platform\Model\Certificates\CertificatesCertificatesEntryModel' => 'Wirelab\CertificatesModule\Certificate\CertificateModel',
+        'Anomaly\Streams\Platform\Model\Downloads\DownloadsDownloadsEntryModel' => 'Wirelab\DownloadsModule\Download\DownloadModel',
     ];
 
     protected $singletons = [
