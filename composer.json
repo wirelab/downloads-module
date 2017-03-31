@@ -1,0 +1,30 @@
+{
+    "name": "wirelab/downloads-module",
+    "type": "streams-addon",
+    "description": "Module for managing downloads.",
+    "keywords": [
+        "wirelab",
+        "downloads",
+        "pyrocms",
+        "pyrocms 3",
+        "managing"
+    ],
+    "homepage": "http://wirelab.nl/",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Wirelab",
+            "email": "algemeen@wirelab.nl",
+            "homepage": "http://www.wirelab.nl/",
+            "role": "Owner"
+        }
+    ],
+    "support": {
+        "email": "algemeen@wirelab.nl"
+    },
+    "autoload": {
+        "psr-4": {
+            "Wirelab\\DownloadsModule\\": "src/"
+        }
+    }
+}
