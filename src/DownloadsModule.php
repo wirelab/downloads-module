@@ -10,7 +10,7 @@ class DownloadsModule extends Module
      *
      * @var string
      */
-    protected $icon = 'fa fa-puzzle-piece';
+    protected $icon = 'fa fa-download';
 
     /**
      * The module sections.

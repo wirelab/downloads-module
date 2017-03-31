@@ -11,7 +11,10 @@ class WirelabModuleDownloadsCreateDownloadsStream extends Migration
      * @var array
      */
     protected $stream = [
-        'slug' => 'downloads'
+        'slug' => 'downloads',
+        'title_column' => 'name',
+        'translatable' => true,
+        'sortable'     => false,
     ];
 
     /**
@@ -19,6 +22,18 @@ class WirelabModuleDownloadsCreateDownloadsStream extends Migration
      *
      * @var array
      */
-    protected $assignments = [];
+    protected $assignments = [
+        'name' => [
+            'required'     => true,
+            'translatable' => true
+        ],
+        'description' => [
+            'required'     => true,
+            'translatable' => true
+        ],
+        'file' => [
+            'required' => true
+        ]
+    ];
 
 }
