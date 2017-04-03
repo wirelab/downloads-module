@@ -34,10 +34,10 @@ class WirelabModuleDownloadsCreateDownloadsStream extends Migration
                 'default_value' => 'Download'
             ]
         ],
-        'target_blank',
-        'description' => [
-            'required'     => true,
-            'translatable' => true
+        'target_blank' => [
+            'config' => [
+                'default_value' => true
+            ]
         ],
         'file' => [
             'required' => true

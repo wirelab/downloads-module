@@ -33,6 +33,7 @@ class DownloadSeeder extends Seeder
     public function run()
     {
     	$this->createField('image','Image','file',false,false,['folders' => [1]]);
+    	$this->createField('description','Description','textarea',true,true);
     }
 
    	public function createField($slug, $name, $type, $translatable = false, $required = false, $config = [])

@@ -12,7 +12,6 @@ class WirelabModuleDownloadsCreateDownloadsFields extends Migration
      */
     protected $fields = [
     	'name'		   => 'anomaly.field_type.text',
-    	'description'  => 'anomaly.field_type.textarea',
         'button_text'  => 'anomaly.field_type.text',
         'target_blank' => 'anomaly.field_type.boolean',
         'file'         => [
