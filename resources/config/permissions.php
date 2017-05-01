@@ -6,4 +6,7 @@ return [
 		'write',
 		'delete'
 	],
+    'fields' => [
+        'manage',
+    ],
 ];

@@ -25,7 +25,8 @@ class DownloadsModule extends Module
                     'enabled' => 'admin/downloads'
                 ],
                 'assignments' =>[
-                    'enabled' => 'admin/downloads'
+                    'enabled' => 'admin/downloads',
+                    'permission' => 'wirelab.module.downloads::fields.*',
                 ]
             ],
             'sections' => [
