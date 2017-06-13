@@ -2,7 +2,10 @@
 Module for managing downloads.
 
 ## Installation
-`composer install wirelab/downloads-module`
+```bash
+$ composer require wirelab/downloads-module
+$ php artisan addon:install wirelab.module.downloads
+```
 
 ## Overwriting the default view
 1. `php artisan addon:publish downloads`
