@@ -14,12 +14,7 @@ class WirelabModuleDownloadsCreateDownloadsFields extends Migration
     	'name'		   => 'anomaly.field_type.text',
         'button_text'  => 'anomaly.field_type.text',
         'target_blank' => 'anomaly.field_type.boolean',
-        'file'         => [
-            'type'   => 'anomaly.field_type.file',
-            'config' => [
-                'folders' => [2]
-            ]
-        ]
+        'file'         =>  'anomaly.field_type.file'
     ];
 
 }
