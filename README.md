@@ -1,4 +1,5 @@
 # Downloads module
+## ⚠️ This repository has been deprecated ⚠️
 Module for managing downloads.
 
 ## Installation
